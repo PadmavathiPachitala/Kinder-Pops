@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinder Pops</title>
+    <style>
+    body {
+      background-image: url('https://i.pinimg.com/1200x/59/98/71/5998717fec4bcf788dac41c8b9912d92.jpg');
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-size: cover;
+      background-position: center;
+      font-family: 'Poppins',sans-serif;
+    }
+
+    /* The card overlay */
+    .container{
+      background-color: rgba(255, 255, 255, 0.3); /* white with 80% opacity */
+      padding: 20px;
+      border-radius: 20px;
+      text-align: center; /*add margin to navbar*/
+      margin:100px 40px auto;
+      box-shadow: 0 8px 32px #888;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 500px;
+      backdrop-filter: blur(10px);
+      animation: fadesIn 1s ease-in-out;
+    }
+    /* Text styling */
+    h1, p {
+      color: black;
+      margin: 0 0 10px;
+      font-family: 'Poppins',sans-serif;
+    }
+
+    .established {
+      font-style: italic;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    
+    .item{
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 20px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      transition: scale(1.03);
+    }
+
+    .flavor{
+        text-align: left;
+        width: 75%;
+    }
+
+    .price{
+        text-align: right;
+        width: 25%;
+        font-weight: bold;
+    }
+    
+
+    @media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+  
+.item:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: 0.3s ease;
+  cursor: pointer;background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  color: #000;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+
+</style>
+</head>
+<body>
+  <div class="container"> 
+    <h1>Kinder Pops</h1>
+    <p class="established">The store of naturals</p>
+    <hr>
+
+    <section>
+        <h2> Flavours </h2>
+   
+  <article class="item"> <p class="flavor"> Tender Coconut 🥥 </p>
+    <p class="price">₹40</p>
+ </article>
+
+  <article class="item"> <p class="flavor"> Muskmelon 🍈</p>
+    <p class="price">₹40 </p>
+  </article>
+  
+  <article class="item"> <p class="flavor"> Mango 🥭</p>
+    <p class="price">₹30</p>
+  </article>
+  
+  <article class="item"> <p class="flavor"> Blueberry 🫐</p>
+    <p class="price">₹50</p>
+  </article>
+
+  <article class="item"> <p class="flavor"> Custard Apple 🍏</p>
+<p class="price">₹45</p>
+  </article>
+
+  <article class="item"> <p class="flavor"> Strawberry 🍓</p>
+  <p class="price">₹30</p>
+  </article>
+
+  <article class="item"> <p class="flavor"> Pear 🍐</p>
+    <p class="price">₹60</p>
+  </article>
+
+  <article class="item"> <p class="flavor"> Cherry 🍒</p>
+    <p class="price"> ₹50</p>
+  </article>
+</section>
+</div>
+
+</body>
+</html>

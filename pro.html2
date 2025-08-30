@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kinder Pops | Menu</title>
+  <style>
+    body {
+      background-image: url('https://i.pinimg.com/1200x/59/98/71/5998717fec4bcf788dac41c8b9912d92.jpg');
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-size: cover;
+      background-position: center;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Navbar */
+    header {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.6);
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      backdrop-filter: blur(10px);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+      color: #333;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #333;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ff4081;
+    }
+
+    /* The card overlay */
+    .container {
+      background: rgba(255, 255, 255, 0.3);
+      padding: 20px;
+      border-radius: 20px;
+      text-align: center;
+      margin: 100px auto 40px; /* add margin-top for navbar */
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+      width: 80%;
+      max-width: 500px;
+      backdrop-filter: blur(10px);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    /* Headings */
+    h1, p {
+      color: black;
+      margin: 0 0 10px;
+    }
+    .established {
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    /* Menu items */
+    .item {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 20px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      transition: 0.3s ease;
+    }
+    .item:hover {
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 12px;
+      transform: scale(1.03);
+    }
+    .flavor {
+      text-align: left;
+      width: 75%;
+    }
+    .price {
+      text-align: right;
+      width: 25%;
+      font-weight: bold;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 600px) {
+      .container {
+        width: 90%;
+        padding: 15px;
+      }
+      .item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .price {
+        margin-top: 5px;
+      }
+      nav {
+        font-size: 14px;
+      }
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* Footer */
+    footer {
+      margin-top: auto;
+      padding: 15px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(5px);
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <header>
+    <h1>Kinder Pops</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container"> 
+    <h2>Flavours 🍦</h2>
+    <p class="established">The store of naturals</p>
+    <hr>
+
+    <article class="item"><p class="flavor">🥥 Tender Coconut</p><p class="price">₹40</p></article>
+    <article class="item"><p class="flavor">🍈 Muskmelon</p><p class="price">₹40</p></article>
+    <article class="item"><p class="flavor">🥭 Mango</p><p class="price"
